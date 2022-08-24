@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/Components/Countdown.module.css";
-
+import { AiFillCheckCircle } from "react-icons/ai";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 let countdownTimeout: NodeJS.Timeout;
 
 export function Countdown() {
@@ -52,6 +53,7 @@ export function Countdown() {
       {hasFinished ? (
         <button disabled className={styles.countdownButton}>
           Ciclo encerrado
+          <BsFillCheckCircleFill className={styles.fillCheckCircle} />
         </button>
       ) : (
         <>

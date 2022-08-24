@@ -76,4 +76,12 @@
   cursor: not-allowed;
   background: var(--white);
   color: var(--text);
+  border-bottom: 4px solid var(--green);
+}
+
+.fillCheckCircle {
+  color: var(--green);
+  width: 17px;
+  height: 17px;
+  margin-left: 12px;
 }

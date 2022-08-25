@@ -6,7 +6,7 @@ import { ChallengersProvider } from "../context/ChallengesContext";
 import "./_document";
 function MyApp({ Component, pageProps }) {
   return (
-    <ChallengersProvider >
+    <ChallengersProvider>
       <Component {...pageProps} />
     </ChallengersProvider>
   );

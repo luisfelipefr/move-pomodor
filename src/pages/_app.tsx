@@ -7,7 +7,7 @@ import "./_document";
 function MyApp({ Component, pageProps }) {
   return (
     <ChallengersProvider>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </ChallengersProvider>
   );
 }

@@ -5,11 +5,7 @@ import { ChallengersProvider } from "../context/ChallengesContext";
 
 import "./_document";
 function MyApp({ Component, pageProps }) {
-  return (
-    <ChallengersProvider>
-        <Component {...pageProps} />
-    </ChallengersProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

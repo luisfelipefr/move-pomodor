@@ -48,9 +48,7 @@ export function ChallengersProvider({
 
   const experienceToNextLevel = Math.pow(level * 1 * 4, 2);
 
-  useEffect(() => {
-    Notification.requestPermission();
-  }, []);
+  
 
   useEffect(() => {
     Cookies.set("level", String(level));

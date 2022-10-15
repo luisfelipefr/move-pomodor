@@ -52,6 +52,7 @@ export function Countdown() {
               type="button"
               className={styles.countdownButton}
               onClick={startCountdown}
+              autoFocus
             >
               Iniciar um ciclo
             </button>

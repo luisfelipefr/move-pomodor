@@ -36,12 +36,13 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
 
   function startCountdown() {
     setIsActive(true);
+    Notification.requestPermission();
   }
 
   function resetCountdown() {
     clearTimeout(countdownTimeout);
     setIsActive(false);
-    setTime(60 * 20);
+    setTime(60 * 25);
     setHasFinished(false);
   }
 
